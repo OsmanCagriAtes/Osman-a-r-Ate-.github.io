@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darıca Atabey BK - Basketbol Kulübü</title>
+
+    <!-- PROFESYONEL CSS -->
+    <style>
+        /* GENEL */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f5f9;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #0066ff, #003d99);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 8px;
+        }
+
+        /* SOSYAL MEDYA */
+        .social-links a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            transition: 0.3s;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .social-links a:hover {
+            background: white;
+            color: #0066ff;
+        }
+
+        /* ANA YAPI */
+        main {
+            max-width: 1250px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* INTRO */
+        .intro {
+            background: white;
+            padding: 50px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+            border-left: 6px solid #0066ff;
+        }
+
+        .intro h2 {
+            font-size: 2.2em;
+            color: #0066ff;
+            font-weight: 700;
+        }
+
+        /* HAKKIMIZDA */
+        .about {
+            background: #ffffff;
+            padding: 25px 35px;
+            margin-top: 30px;
+            border-radius: 12px;
+            border-left: 6px solid #00a2ff;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+        }
+
+        .about h3 {
+            font-size: 1.8em;
+            color: #003d99;
+        }
+
+        /* GALERI */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.25);
+        }
+
+        /* İLETİŞİM */
+        .contact {
+            background: white;
+            padding: 40px;
+            margin-top: 40px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+            border-left: 6px solid #25D366;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1ebe57;
+            transform: scale(1.05);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+        }
+
+        footer h3 {
+            margin-top: 0;
+            font-size: 1.6em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            .intro {
+                padding: 30px;
+            }
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>DARICA ATABEY BK</h1>
+        <p>Basketbol Kulübü - Darıca'nın Gururu</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/daricaatabeybk/" target="_blank">📸 Instagram</a>
+            <a href="https://daricaatabeybk.com.tr/feed/" target="_blank">📰 Haberler</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>BASKETBOL • VOLEYBOL • CİMNASTİK</h2>
+            <p>Size en yakın şubemiz ve branşlarımız hakkında bilgi almak için bizimle iletişime geçebilirsiniz. Darıca Atabey BK olarak gençlerimizi spora teşvik ediyoruz!</p>
+        </section>
+
+        <section class="about">
+            <h3>HAKKIMIZDA</h3>
+            <p>Darıca Atabey Basketbol Kulübü, yerel spor organizasyonları tarafından temsil edilmektedir. Amacımız Darıca’da kaliteli spor eğitimi sunmak ve genç nesilleri spora kazandırmaktır.</p>
+        </section>
+
+        <section class="gallery">
+            <h2 style="text-align: center; grid-column: 1 / -1;">Foto Galeri</h2>
+            <img src="https://via.placeholder.com/300x200?text=Maç+Anı+1" alt="Maç Anı 1">
+            <img src="https://via.placeholder.com/300x200?text=Antrenman+2" alt="Antrenman 2">
+            <img src="https://via.placeholder.com/300x200?text=Şampiyonluk+3" alt="Şampiyonluk 3">
+            <img src="https://via.placeholder.com/300x200?text=Takım+Foto+4" alt="Takım Foto 4">
+            <img src="https://via.placeholder.com/300x200?text=Etkinlik+5" alt="Etkinlik 5">
+            <img src="https://via.placeholder.com/300x200?text=Ödül+Töreni+6" alt="Ödül Töreni 6">
+            <img src="https://via.placeholder.com/300x200?text=Antrenman+7" alt="Antrenman 7">
+            <img src="https://via.placeholder.com/300x200?text=Maç+Anı+8" alt="Maç Anı 8">
+        </section>
+
+        <section class="contact">
+            <h2>Aklınızdaki Tüm Sorular İçin Bize Ulaşın</h2>
+            <a href="#" class="whatsapp-btn">WhatsApp ile İletişime Geç</a>
+            <a href="#" class="whatsapp-btn">Branş Bilgisi Al</a>
+        </section>
+    </main>
+
+    <footer>
+        <h3>İLETİŞİM BİLGİLERİMİZ</h3>
+        <p>Telefon: 0538 400 49 00</p>
+        <p>Adres: Darıca, Atatürk Cad. No:10, 41700 Kocaeli</p>
+        <p>Darıca Atabey Basketbol Kulübü — Resmi Spor Federasyonu Üyesidir.</p>
+    </footer>
+
+</body>
+</html>
